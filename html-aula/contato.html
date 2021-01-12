@@ -30,11 +30,10 @@
                 <br>
 
                 <label for="assunto">Assunto</label><br>
-                <textarea name="assunto" id="assunto" cols="30" rows="5" onkeyup="validaAssunto()"></textarea>
+                <textarea name="assunto" id="assunto" cols="30" rows="5" onkeydown="ligarBtn()" onkeyup="validaAssunto()"></textarea>
                 <div id="txtAssunto"></div>
                 <br>
-                <br>
-                <button class="btn" onclick="enviar()">Enviar</button>
+                <button class="btn" id="btn" onclick="enviar()">Enviar</button>
             </form>
         </div>
 
